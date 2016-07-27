@@ -1,0 +1,73 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "globals": {
+    "__DEV__"      : false,
+    "__PROD__"     : false,
+    "__DEBUG__"    : false,
+    "__DEBUG_NW__" : false
+  },
+  "rules": {
+    "strict": 0,
+    "no-irregular-whitespace": 0,
+    "new-cap": [2, {"newIsCap": false, "capIsNew": false}],
+    "comma-dangle": [1, "never"],
+    "key-spacing": [0, {
+      "beforeColon": true,
+      "afterColon": true
+    }],
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "no-else-return": 0,
+    "import/no-unresolved": 0,
+    "space-before-function-paren": [0, "always"],
+    "react/jsx-quotes": [0, "single"],
+    "react/prop-types": 0,
+    "react/no-multi-comp": [1, { "ignoreStateless": true }],
+    "react/sort-comp": [1, {
+      "order": [
+        "/^propTypes$/",
+        "/^defaultProps$/",
+        "/^getMeteorData$/",
+        "lifecycle",
+        "/^on.+$/",
+        "render",
+        "/^render.+$/",
+        "everything-else"
+      ]
+    }],
+    "no-undef": 1,
+    "no-unused-vars": 1,
+    "react/display-name": 1,
+    "react/jsx-no-duplicate-props": 1,
+    "react/jsx-no-undef": 1,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/no-danger": 1,
+    "react/no-deprecated": [1, {"react": "15.1.0"}],
+    "react/no-did-mount-set-state": 1,
+    "react/no-did-update-set-state": 1,
+    "react/no-direct-mutation-state": 1,
+    "react/no-is-mounted": 1,
+    "react/no-unknown-property": 1,
+    "react/react-in-jsx-scope": 1
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "15.1.0"
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

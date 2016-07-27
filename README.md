@@ -2,6 +2,8 @@
 
 Start a realtime (live and production ready) web app in seconds.
 
+![react-horizon Preview](static/images/preview.png)
+
 ### Stack
 
 - [facebook/react](https://github.com/facebook/react) - View
