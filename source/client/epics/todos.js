@@ -26,10 +26,10 @@ const addTodoEpic = action$ =>
     .mergeMap(action =>
       todoHz
         .store(action.payload)
+        .ignoreElements()
         .takeUntil(action$.ofType('cancel requests'))
         .catch(err => Observable.of(showNotification(err))) // ideally catch any errors and dispatch a notification
     )
-    .ignoreElements()
 
 const deleteTodoEpic = action$ =>
   action$
@@ -37,9 +37,9 @@ const deleteTodoEpic = action$ =>
     .mergeMap(action =>
       todoHz
         .remove(action.payload)
+        .ignoreElements()
         .takeUntil(action$.ofType('cancel requests'))
         .catch(err => Observable.of(showNotification(err))) // ideally catch any errors and dispatch a notification
     )
-    .ignoreElements()
 
 export default [watchTodosEpic, addTodoEpic, deleteTodoEpic]
