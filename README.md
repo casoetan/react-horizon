@@ -49,7 +49,7 @@ This will start a server listening on ```https://localhost:3000``` for dev.
 Pull Requests are very welcome!
 
 ### Thanks
-- A big thank you to [flipace/lovli.js](http://github.com/flipace/lovli.js) - Lovli.js for is great boilerplate which guided this development
+- A big thank you to [flipace/lovli.js](http://github.com/flipace/lovli.js) - Lovli.js for his great boilerplate which guided this development
 - Another big thank you to [jayphelps](http://github.com/jayphelps) of [redux-observable/redux-observable](http://github.com/redux-observable/redux-observable) for helping smooth all the rough edges
 
 ### License
