@@ -15,6 +15,7 @@ Start a realtime (live and production ready) web app in seconds.
 
 ### Installation
 ``` bash
+$ npm install -g horizon
 $ git clone --depth=1 https://github.com/casoetan/react-horizon
 $ cd react-horizon
 $ npm i
