@@ -1,6 +1,6 @@
 {
   "name": "react-horizon",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "license": "MIT",
   "description": "A boilerplate for developing react + redux applications using redux observables with rethinkdb + horizon as realtime database and express for the server.",
   "repository": "https://github.com/casoetan/react-horizon",
