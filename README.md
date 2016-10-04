@@ -2,6 +2,10 @@
 
 Start a realtime (live and production ready) web app in seconds.
 
+Updated for horizon 2.0.
+
+PS. More updates coming soon
+
 ![react-horizon Preview](static/images/preview.png)
 
 ### Stack
@@ -42,7 +46,7 @@ $ npm run build # builds source files in .build/
 $ node .build/server.bundle.js # starts server (after you built with npm run build)
 ```
 
-This will start a server listening on ```https://localhost:3000``` for dev.
+This will start a server listening on ```https://localhost:3000``` for dev (Allow https for localhost).
 *You can change the port in* ```config/page.js``` *or by setting the ```PORT``` environment variable*.
 
 ### Contributing
