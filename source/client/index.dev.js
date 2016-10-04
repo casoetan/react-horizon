@@ -28,7 +28,7 @@ ReactDOM.render(
 // // in case of problems with react-router, check this issue:
 // // https://github.com/gaearon/react-hot-loader/issues/249
 if (module.hot) {
-  module.hot.accept('./routes', () => {
+  module.hot.accept('./containers/App', () => {
     // If you use Webpack 2 in ES modules mode, you can
     // use <App /> here rather than require() a <NextApp />.
     const NextApp = require('./containers/App/index').default;
