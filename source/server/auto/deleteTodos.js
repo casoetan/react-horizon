@@ -1,5 +1,5 @@
 import later from 'later'
-import { r, r_internal } from '../db'
+import { r } from '../db'
 
 /**
  * Delete all todos every 10 minutes.
@@ -8,9 +8,9 @@ import { r, r_internal } from '../db'
 const every5minutes = later.parse.text('every 5 minutes')
 
 const deleteTodos = () => {
-  r_internal.table('collections').get('todos').run()
+  r.table('hz_collections').get('todos').run()
   .then(function(result) {
-    r.table(result.table).delete().run()
+    r.table('todos').delete().run()
   })
 }
 
