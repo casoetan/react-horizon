@@ -54,7 +54,6 @@ To monitor redux actions in remote dev run
 ```bash
 $ npm run remotedev # to start remote dev and monitor redux actions
 ```
-Actions can be monitored at
 More info on RemoteDev at [zalmoxisus/remotedev-app](https://github.com/zalmoxisus/remotedev-app)
 You should also download the RemoteDev app to monitor your actions from the [Chrome Store](https://chrome.google.com/webstore/detail/remotedev/faicmgpfiaijcedapokpbdejaodbelph)
 
