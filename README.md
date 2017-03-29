@@ -46,6 +46,9 @@ $ npm run build # builds source files in .build/
 $ node .build/server.bundle.js # starts server (after you built with npm run build)
 ```
 
+This will start a server listening on ```https://localhost:3000``` for dev (Allow https for localhost).
+*You can change the port in* ```config/page.js``` *or by setting the ```PORT``` environment variable*.
+
 ### RemoteDev
 To monitor redux actions in remote dev run
 ```bash
@@ -54,9 +57,6 @@ $ npm run remotedev # to start remote dev and monitor redux actions
 Actions can be monitored at
 More info on RemoteDev at [zalmoxisus/remotedev-app](https://github.com/zalmoxisus/remotedev-app)
 You should also download the RemoteDev app to monitor your actions from the [Chrome Store](https://chrome.google.com/webstore/detail/remotedev/faicmgpfiaijcedapokpbdejaodbelph)
-
-This will start a server listening on ```https://localhost:3000``` for dev (Allow https for localhost).
-*You can change the port in* ```config/page.js``` *or by setting the ```PORT``` environment variable*.
 
 ### Contributing
 Pull Requests are very welcome!
